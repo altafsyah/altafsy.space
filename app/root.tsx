@@ -5,6 +5,34 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import tailwind from "~/tailwind.css?url";
+import stylesheet from "~/style.css?url";
+import type { LinksFunction } from "@remix-run/node";
+import Navbar from "./components/navbar";
+
+export const links: LinksFunction = () => [
+  {
+    rel: "stylesheet",
+    href: tailwind,
+  },
+  {
+    rel: "stylesheet",
+    href: stylesheet,
+  },
+  {
+    rel: "preconnect",
+    href: "https://fonts.googleapis.com",
+  },
+  {
+    rel: "preconnect",
+    href: "https://fonts.gstatic.com",
+    crossOrigin: "anonymous",
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap",
+  },
+];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -15,8 +43,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
-        {children}
+      <body className="bg-primary text-tGray">
+        <Navbar />
+        <main className="max-w-xl w-full mx-auto mt-10 md:mt-16 pb-5">
+          {children}
+        </main>
         <ScrollRestoration />
         <Scripts />
       </body>

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/HelveticaNeueRoman.otf") format("opentype");
+}
+
+:root {
+  --helvetica: "Helvetica", sans-serif;
+  --figtree: "Figtree", sans-serif;
+}
+
+body {
+  font-family: var(--figtree);
+}
+
+h1 {
+  line-height: 44px;
+}
