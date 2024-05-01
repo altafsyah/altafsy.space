@@ -1,0 +1,67 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "title": "Dekan Cup",
+      "subtitle": "Online registration system for Dekan Cup",
+      "year": "2022",
+      "description": {
+        "overview": "This is a website that helps to manage registration for online e-sport tournament held by my university.",
+        "links": [
+          {
+            "label": "<p>See it live</p>",
+            "url": "https://teknik.untan.ac.id/dekan-cup/"
+          }
+        ],
+        "background": "<p>Dekan Cup is an annual event, it's held by my university and open to public. The first event was successful and it reach many people outside my university, even my province. So, the next committe suggest to built a website to help people to register their team. Since the event took time at 2022 (which after pandemic), the event is online</p>",
+        "features": [
+          "<p><strong>Registration form: </strong>The website is mainly to handle teams who want to register and participate in the event. It has 2 forms for each event.</p>",
+          "<p><strong>Admin panel: </strong>Admin can manage the event, the team, and the match. Admin can also see the registration data and download it.</p>",
+          "<p><strong>Landing page: </strong>It has a landing page that shows the event, the prize, and the rules. It also has a countdown timer to the event.</p>"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Anggrek Dewata",
+      "subtitle": "E-commerce for local business",
+      "year": "2023",
+      "description": {
+        "overview": "This is a website for local business in Bali, Indonesia. It helps the business owner to sell their product online.",
+        "links": [
+          {
+            "label": "<p>See it live</p>",
+            "url": "https://anggrekdewata.com/"
+          }
+        ],
+        "background": "<p>Dekan Cup is an annual event, it's held by my university and open to public. The first event was successful and it reach many people outside my university, even my province. So, the next committe suggest to built a website to help people to register their team. Since the event took time at 2022 (which after pandemic), the event is online</p>",
+        "features": [
+          "<p><strong>Registration form: </strong>The website is mainly to handle teams who want to register and participate in the event. It has 2 forms for each event.</p>",
+          "<p><strong>Admin panel: </strong>Admin can manage the event, the team, and the match. Admin can also see the registration data and download it.</p>",
+          "<p><strong>Landing page: </strong>It has a landing page that shows the event, the prize, and the rules. It also has a countdown timer to the event.</p>"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "MyAgro",
+      "subtitle": "Website for agriculture startup",
+      "year": "2024",
+      "description": {
+        "overview": "This is a website for local business in Bali, Indonesia. It helps the business owner to sell their product online.",
+        "links": [
+          {
+            "label": "<p>See it live</p>",
+            "url": "https://anggrekdewata.com/"
+          }
+        ],
+        "background": "<p>Dekan Cup is an annual event, it's held by my university and open to public. The first event was successful and it reach many people outside my university, even my province. So, the next committe suggest to built a website to help people to register their team. Since the event took time at 2022 (which after pandemic), the event is online</p>",
+        "features": [
+          "<p><strong>Registration form: </strong>The website is mainly to handle teams who want to register and participate in the event. It has 2 forms for each event.</p>",
+          "<p><strong>Admin panel: </strong>Admin can manage the event, the team, and the match. Admin can also see the registration data and download it.</p>",
+          "<p><strong>Landing page: </strong>It has a landing page that shows the event, the prize, and the rules. It also has a countdown timer to the event.</p>"
+        ]
+      }
+    }
+  ]
+}
