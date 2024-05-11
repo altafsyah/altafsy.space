@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => [
   {
-    title: "About",
+    title: "About || altafsy",
     description: "Altaf Syahrastani - Public Space",
   },
 ];
@@ -35,10 +36,10 @@ export default function About() {
           <li>
             X (or Twitter){": "}
             <a
+              rel="noreferrer"
               href="https://twitter.com/alsyh_77"
               target="_blank"
-              className="underline font-medium"
-            >
+              className="underline font-medium">
               @alsyh_77
             </a>
           </li>
@@ -46,8 +47,7 @@ export default function About() {
             Email:{" "}
             <a
               href="mailto:syahrastanialtaf@gmail.com"
-              className="underline font-medium"
-            >
+              className="underline font-medium">
               syahrastanialtaf@gmail.com
             </a>
           </li>
@@ -55,10 +55,10 @@ export default function About() {
         <p className="mt-5">
           You can also visit{" "}
           <a
+            rel="noreferrer"
             href="https://www.tanyaaja.in/p/altafsyah"
             target="_blank"
-            className="mt-3 underline font-medium"
-          >
+            className="mt-3 underline font-medium">
             this site
           </a>{" "}
           to ask me anonymously.
@@ -66,7 +66,7 @@ export default function About() {
       </section>
       <section id="uses" className="text-xl mt-5 px-5">
         <h1 className="text-3xl font-semibold">Uses</h1>
-        <p className="mt-3 p-3 bg-secondary rounded drop-shadow">
+        <p className="mt-3 p-3 bg-accent/50 backdrop-blur border border-accent rounded drop-shadow">
           I'm planning to put all tools and software that I'm using for my
           daily. Stay tuned! 🚀{" "}
         </p>

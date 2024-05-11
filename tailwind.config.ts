@@ -5,10 +5,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#F4F4F4",
-        secondary: "#EEEEEE",
-        tGray: "#42464C",
-        tLightGray: "#828282",
+        // primary: "#F4F4F4",
+        primary: "#111F41",
+        // secondary: "#EEEEEE",
+        secondary: "#eef0fb",
+
+        // tGray: "#42464C",
+        accent: "#0E1934",
+
+        // tLightGray: "#828282",
       },
     },
   },

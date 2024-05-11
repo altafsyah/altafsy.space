@@ -3,18 +3,17 @@ import clsx from "clsx";
 
 export default function Navbar() {
   return (
-    <nav className="w-fit px-6 mx-auto py-2 bg-green-secondary rounded-full mt-10">
+    <nav className="w-fit px-6 mx-auto py-2 rounded-full mt-10 bg-accent/50 backdrop-blur border border-accent">
       <ul className="flex gap-5">
         <li>
           <NavLink
             to="/"
             className={({ isActive }) => {
               return clsx(
-                isActive ? "text-tGray font-semibold" : "text-gray-400",
+                isActive ? "text-secondary font-semibold" : "text-gray-400",
                 "transition-colors duration-150"
               );
-            }}
-          >
+            }}>
             /Home
           </NavLink>
         </li>
@@ -23,11 +22,10 @@ export default function Navbar() {
             to="/about"
             className={({ isActive }) => {
               return clsx(
-                isActive ? "text-tGray font-semibold" : "text-gray-400",
+                isActive ? "text-secondary font-semibold" : "text-gray-400",
                 "transition-colors duration-150"
               );
-            }}
-          >
+            }}>
             /About
           </NavLink>
         </li>
@@ -36,11 +34,10 @@ export default function Navbar() {
             to="/works"
             className={({ isActive }) => {
               return clsx(
-                isActive ? "text-tGray font-semibold" : "text-gray-400",
+                isActive ? "text-secondary font-semibold" : "text-gray-400",
                 "transition-colors duration-150"
               );
-            }}
-          >
+            }}>
             /Works
           </NavLink>
         </li>
@@ -49,11 +46,10 @@ export default function Navbar() {
             to="/thoughts"
             className={({ isActive }) => {
               return clsx(
-                isActive ? "text-tGray font-semibold" : "text-gray-400",
+                isActive ? "text-secondary font-semibold" : "text-gray-400",
                 "transition-colors duration-150"
               );
-            }}
-          >
+            }}>
             /Thoughts
           </NavLink>
         </li>
