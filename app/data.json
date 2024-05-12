@@ -8,17 +8,15 @@
       "image": "/dekan.jpeg",
       "description": {
         "overview": "This is a website that helps to manage registration for online e-sport tournament held by my university.",
-        "links": [
-          {
-            "label": "<p>See it live</p>",
-            "url": "https://teknik.untan.ac.id/dekan-cup/"
-          }
-        ],
-        "background": "<p>Dekan Cup is an annual event, it's held by my university and open to public. The first event was successful and it reach many people outside my university, even my province. So, the next committe suggest to built a website to help people to register their team. Since the event took time at 2022 (which after pandemic), the event is online</p>",
+        "links": {
+          "label": "See it live",
+          "url": "https://teknik.untan.ac.id/dekan-cup/"
+        },
+        "background": "Dekan Cup is an annual event, it's held by my university and open to public. The first event was successful and it reach many people outside my university, even my province. So, the next committe suggest to built a website to help people to register their team. Since the event took time at 2022 (which after pandemic), the event is online",
         "features": [
-          "<p><strong>Registration form: </strong>The website is mainly to handle teams who want to register and participate in the event. It has 2 forms for each event.</p>",
-          "<p><strong>Admin panel: </strong>Admin can manage the event, the team, and the match. Admin can also see the registration data and download it.</p>",
-          "<p><strong>Landing page: </strong>It has a landing page that shows the event, the prize, and the rules. It also has a countdown timer to the event.</p>"
+          "Registration form: The website is mainly to handle teams who want to register and participate in the event. It has 2 forms for each event.",
+          "Admin panel: Admin can manage the event, the team, and the match. Admin can also see the registration data and download it.",
+          "Landing page: It has a landing page that shows the event, the prize, and the rules. It also has a countdown timer to the event."
         ]
       }
     },
@@ -30,17 +28,15 @@
       "image": "/jeruk.jpeg",
       "description": {
         "overview": "This is a website for local business in Bali, Indonesia. It helps the business owner to sell their product online.",
-        "links": [
-          {
-            "label": "<p>See it live</p>",
-            "url": "https://anggrekdewata.com/"
-          }
-        ],
-        "background": "<p>Dekan Cup is an annual event, it's held by my university and open to public. The first event was successful and it reach many people outside my university, even my province. So, the next committe suggest to built a website to help people to register their team. Since the event took time at 2022 (which after pandemic), the event is online</p>",
+        "links": {
+          "label": "See it live",
+          "url": "https://anggrekdewata.com/"
+        },
+        "backdround": "Anggrek Dewata is a website for local business in Bali, Indonesia. It helps the business owner to sell their product online. The website is built because the owner want to reach more customer outside Bali.",
         "features": [
-          "<p><strong>Registration form: </strong>The website is mainly to handle teams who want to register and participate in the event. It has 2 forms for each event.</p>",
-          "<p><strong>Admin panel: </strong>Admin can manage the event, the team, and the match. Admin can also see the registration data and download it.</p>",
-          "<p><strong>Landing page: </strong>It has a landing page that shows the event, the prize, and the rules. It also has a countdown timer to the event.</p>"
+          "Product page: The website has a product page that shows the product, the price, and the description.",
+          "Cart: User can add the product to the cart and see the total price.",
+          "Checkout: User can checkout the product (included the shipping cost) and pay it using bank transfer."
         ]
       }
     },
@@ -52,12 +48,30 @@
       "image": "/myagro.webp",
       "description": {
         "overview": "This is a website for local business in Bali, Indonesia. It helps the business owner to sell their product online.",
-        "links": [],
-        "background": "<p>Dekan Cup is an annual event, it's held by my university and open to public. The first event was successful and it reach many people outside my university, even my province. So, the next committe suggest to built a website to help people to register their team. Since the event took time at 2022 (which after pandemic), the event is online</p>",
+        "links": {},
+        "background": "MyAgro is a website for agriculture startup. The website is still on progress. It's a company who focuses on fundraising for agriculture project. The website is built to help the company to reach more investor and farmer.",
         "features": [
-          "<p><strong>Registration form: </strong>The website is mainly to handle teams who want to register and participate in the event. It has 2 forms for each event.</p>",
-          "<p><strong>Admin panel: </strong>Admin can manage the event, the team, and the match. Admin can also see the registration data and download it.</p>",
-          "<p><strong>Landing page: </strong>It has a landing page that shows the event, the prize, and the rules. It also has a countdown timer to the event.</p>"
+          "Landing page: The website has a landing page that shows the company, the project, and the team.",
+          "Project information: The website has a page that shows the project information, the goal, and the progress."
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "a.gung.p",
+      "subtitle": "Website for architect portfolio",
+      "year": "2024",
+      "image": "/myagro.webp",
+      "description": {
+        "overview": "This is a website for local business in Bali, Indonesia. It helps the business owner to sell their product online.",
+        "links": {
+          "label": "See it live",
+          "url": "https://agungp.com/"
+        },
+        "background": "It's a website for my friend who is an architect. He wants to show his portfolio to the world. The website is built to help him to reach more client.",
+        "features": [
+          "Landing page: The website has a landing page that shows the architect, the project, and the team.",
+          "Gallery: The website has a gallery page that shows the project that has been done by the architect."
         ]
       }
     }
