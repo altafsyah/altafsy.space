@@ -16,8 +16,12 @@ export const meta: MetaFunction = () => [
 ];
 
 export const loader = async () => {
-  const sortedWorks = data.works.sort((a: TWorkItem, b: TWorkItem) => {
-    return parseInt(b.year) - parseInt(a.year);
+  const sortedWorks = await new Promise<TWorkItem[]>((resolve) => {
+    resolve(
+      data.works.sort((a: TWorkItem, b: TWorkItem) => {
+        return parseInt(b.year) - parseInt(a.year);
+      })
+    );
   });
   return defer({
     sortedWorks: sortedWorks,
