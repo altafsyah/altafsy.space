@@ -1,10 +1,12 @@
 import WorkItem, { WorkItem as TWorkItem } from "~/components/works-item";
 import data from "~/data.json";
 import type { MetaFunction } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { defer } from "@remix-run/node";
+import { Await, useLoaderData } from "@remix-run/react";
 import { AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import SelectedWork from "~/components/selected-work";
+import WorksLoader from "~/components/works-loader";
 
 export const meta: MetaFunction = () => [
   {
@@ -17,11 +19,13 @@ export const loader = async () => {
   const sortedWorks = data.works.sort((a: TWorkItem, b: TWorkItem) => {
     return parseInt(b.year) - parseInt(a.year);
   });
-  return sortedWorks;
+  return defer({
+    sortedWorks: sortedWorks,
+  });
 };
 
 export default function Works() {
-  const sortedWorks = useLoaderData<typeof loader>();
+  const { sortedWorks } = useLoaderData<typeof loader>();
   const [selected, setSelected] = useState<TWorkItem | undefined>();
 
   function toggleSelected(item: TWorkItem | undefined) {
@@ -36,15 +40,19 @@ export default function Works() {
           These are projects that I work for my client.
         </h2>
         <section className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
-          {sortedWorks.map((item: TWorkItem, index:number) => (
-            <WorkItem
-              index={index}
-              id={item.id}
-              key={item.id}
-              toggle={toggleSelected}
-              item={item}
-            />
-          ))}
+          <Suspense fallback={<WorksLoader />}>
+            <Await resolve={sortedWorks}>
+              {sortedWorks.map((item: TWorkItem, index: number) => (
+                <WorkItem
+                  index={index}
+                  id={item.id}
+                  key={item.id}
+                  toggle={toggleSelected}
+                  item={item}
+                />
+              ))}
+            </Await>
+          </Suspense>
         </section>
       </section>
       <AnimatePresence>
