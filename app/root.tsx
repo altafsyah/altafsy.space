@@ -9,6 +9,7 @@ import tailwind from "~/tailwind.css?url";
 import stylesheet from "~/style.css?url";
 import type { LinksFunction } from "@remix-run/node";
 import Navbar from "./components/navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const links: LinksFunction = () => [
   {
@@ -50,6 +51,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         </main>
         <ScrollRestoration />
         <Scripts />
+        <Analytics />
       </body>
     </html>
   );
