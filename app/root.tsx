@@ -10,6 +10,7 @@ import stylesheet from "~/style.css?url";
 import type { LinksFunction } from "@remix-run/node";
 import Navbar from "./components/navbar";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/remix"
 
 export const links: LinksFunction = () => [
   {
